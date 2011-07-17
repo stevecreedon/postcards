@@ -4,7 +4,7 @@ class PostcardsController < ApplicationController
     render :nothing => true
   end
   
-  def show
+  def create
     Postcard.basic(params[:to], params[:from], params[:message]).deliver
     render :nothing => true
   end
