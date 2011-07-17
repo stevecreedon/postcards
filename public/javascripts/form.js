@@ -10,7 +10,7 @@ $("#postcard-form").html(html.join(""));
 
 $(' [placeholder] ').defaultValue();
 $("#send-message-button").click(function(){
-	
+	alert($('#postcard-data').serialize());
 	$.ajax({
 		type: 'POST',
 		 url: 'http://www.doglight.co.uk/postcards',
