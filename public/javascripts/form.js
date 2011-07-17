@@ -13,7 +13,7 @@ $("#send-message-button").click(function(){
 	
 	$.ajax({
 		type: 'POST',
-		 url: 'www.doglight.co.uk/postcards/brighton',
+		 url: 'http://www.doglight.co.uk/postcards/brighton',
 		 data: $('#postcard-form').serialize(),
 		 success: function(){$.growlUI('Growl Notification', 'your postcard has been sent')}
 	})
