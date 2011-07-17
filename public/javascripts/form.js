@@ -1,1 +1,1 @@
-$("#postcard-form").html("send message to: <input type='text' id='message-to' />")
+$("#postcard-form").html("<p>send postcard to:<br/><input type='text' id='message-to' /></p><p>message:<br/><textarea></textarea></p>")
