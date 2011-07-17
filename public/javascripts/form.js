@@ -19,3 +19,8 @@ $("#send-message-button").click(function(){
 	})
 	
 })
+
+$.get({
+	type: 'GET',
+	 url: 'http://www.doglight.co.uk/postcards/'
+})
