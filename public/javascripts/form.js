@@ -14,7 +14,8 @@ $("#send-message-button").click(function(){
 		type: 'POST',
 		 url: 'http://www.doglight.co.uk/postcards',
 		 data: $('#postcard-data').serialize(),
-		 timeout: 10000}
+		 timeout: 10000,
+		 success: function(){alert('ok')}
 	})
 	
 })
