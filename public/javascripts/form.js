@@ -7,7 +7,6 @@ html.push("</form>");
 
 $("#postcard-form").html(html.join(""));
 
-alert($('#to').length)
 
 $('#to').defaultValue('email this postcard to');
 $('#from').defaultValue('your email address');
