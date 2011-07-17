@@ -1,6 +1,12 @@
 html = new Array()
-html.push("<p><input style='width: 100%;' type='text' id='message-to' value='your email address' /></p>");
-html.push("<p><input style='width: 100%;' type='text' id='message-to' value='email this postcard to'/></p>");
-html.push("<p>message:<br/><textarea style='width: 100%; height: 100px;'  id='message-text'>personal message</textarea></p>");
+html.push("<form id='postcard-form'");
+html.push("<p><input style='width: 100%;' type='text' id='from' /></p>");
+html.push("<p><input style='width: 100%;' type='text' id='to' /></p>");
+html.push("<p><textarea style='width: 100%; height: 100px;'  id='message'></textarea></p>");
+html.push("</form>");
 
-$("#postcard-form").html(html.join(""))
+$("#postcard-form").html(html.join(""));
+
+$('#to').defaultText({ defText: 'email this postcard to' });
+$('#from').defaultText({ defText: 'your email address' });
+$("#message").defaultText({ defText: 'your message' });
