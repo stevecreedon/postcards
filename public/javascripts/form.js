@@ -7,6 +7,8 @@ html.push("</form>");
 
 $("#postcard-form").html(html.join(""));
 
+alert($('#to').length)
+
 $('#to').defaultText({ defText: 'email this postcard to' });
 $('#from').defaultText({ defText: 'your email address' });
 $("#message").defaultText({ defText: 'your message' });
