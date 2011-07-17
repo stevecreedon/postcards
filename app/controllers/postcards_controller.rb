@@ -1,7 +1,7 @@
 class PostcardsController < ApplicationController
   
   def show
-    Postcard.basic('steve@light-art.co.uk', 'steve@light-art.co.uk', 'hello postcard').deliver
+    Postcard.basic(params[:to], params[:from], params[:message]).deliver
     render :nothing => true
   end
   
