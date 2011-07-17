@@ -46,4 +46,12 @@ Postcards::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+  
+  config.action_mailer.smtp_settings = {:address => "smtp.gmail.com",
+                                        :port  => 587,
+              :domain  => 'light-art.co.uk',
+              :user_name  => 'steve@light-art.co.uk',
+              :password  => 'Fyodor14',
+              :authentication  => 'plain',
+              :enable_starttls_auto => true}
 end
