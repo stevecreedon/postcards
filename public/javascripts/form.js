@@ -1,1 +1,1 @@
-$("#postcard-form").html("<p>send postcard to:<br/><input type='text' id='message-to' /></p><p>message:<br/><textarea></textarea></p>")
+$("#postcard-form").html("<p>send postcard to:<br/><input style='width: 100%;' type='text' id='message-to' /></p><p>message:<br/><textarea style='width: 100%;'  id='message-text'></textarea></p>")
