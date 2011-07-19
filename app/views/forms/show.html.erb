@@ -14,7 +14,7 @@
 	});
 	
 	<% if @message %>
-		$(this).block({message: <%= "#{@message}" %>,
+		$("#postcard-data").block({message: "<%= #{@message} %>",
 						css: {border: 'none', background: 'none'},
 						overlayCSS:{backgroundColor: '#cfc',
 						timeout: 3000}})
