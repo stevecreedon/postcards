@@ -1,2 +1,0 @@
-page.alert 'close me please'
-<< 'parent.$.fn.colorbox.close();'
