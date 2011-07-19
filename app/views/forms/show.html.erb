@@ -10,7 +10,16 @@
 	$("#postcard-data").submit(function(){
 		$(this).block({message: 'Blake is sending your postcard now',
 						css: {border: 'none', background: 'none'},
-						overlayCSS:{backgroundColor: '#fff'}})
+						overlayCSS:{backgroundColor: '#ccc'}})
 	});
+	
+	<% if @message %>
+		$(this).block({message: <%= "#{@message}" %>,
+						css: {border: 'none', background: 'none'},
+						overlayCSS:{backgroundColor: '#cfc',
+						timeout: 3000}})
+	<% end %>
+	
 </script>
+
 
