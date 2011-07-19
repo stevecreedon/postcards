@@ -6,14 +6,4 @@
 </form>
 <script src="https://s3-eu-west-1.amazonaws.com/blakecards/jquery-1.6.2.min.js"></script>
 <script src="https://s3-eu-west-1.amazonaws.com/blakecards/jquery.blockUI.js"></script>
-<script>
-	$("#postcard-data").submit(function(){
-		$.ajax({
-			type: 'POST',
-			url: 'http://www.doglight.co.uk/postcards',
-			data: $(this).serialize()
-		})
-		return false;
-	})
-</script>
 
