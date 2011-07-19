@@ -8,7 +8,7 @@ class PostcardsController < ApplicationController
   
   def create
     Postcard.basic(params[:to], params[:from], params[:message]).deliver
-    @message = "Your postcard was sent.</p><p>Why not send another ?"
+    @message = "Your postcard was sent. Why not send another ?"
     render :template => 'forms/show'
   end
   
