@@ -8,7 +8,9 @@
 <script src="https://s3-eu-west-1.amazonaws.com/blakecards/jquery.blockUI.js"></script>
 <script>
 	$("#postcard-data").submit(function(){
-		$(this).block({message: 'Blake is sending your postcard now'})
+		$(this).block({message: 'Blake is sending your postcard now',
+						css: {border: 'none', background: 'none'},
+						overlayCSS:{backgroundColor: #fff;}})
 	});
 </script>
 
