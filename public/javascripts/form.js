@@ -1,4 +1,5 @@
 $(' [placeholder] ').defaultValue();
+/*
 $("#send-message-button").click(function(){
 	$.ajax({
 		type: 'POST',
@@ -9,7 +10,7 @@ $("#send-message-button").click(function(){
 	})
 	
 })
-
+*/
 $.get({
 	type: 'GET',
 	 url: 'http://www.doglight.co.uk/postcards'
