@@ -1,5 +1,7 @@
 class PostcardsController < ApplicationController
   
+  layout "application", :except => [:create]
+  
   def index
     render :nothing => true
   end
